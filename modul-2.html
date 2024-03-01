@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 2 Aplikasi Berbasis Platform
+    </title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="intro">Pengenalan HTML ABP Modul 2</h1>
+    </header>
+    <main>
+
+        <div class="content-border">
+            <div class="heading-exam card">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+                <section class="content text">
+                    <p><i>Heading</i> pada HTML merupakan <i>tag</i> yang berguna untuk menampilkan judul dari konten
+                        laman <i>web</i>
+                        yang dibangun. <i>Heading</i> dalam sebuah laman <i>web</i> berperan penting untuk aplikasi
+                        mesin
+                        pencarian
+                        karena sistem mesin pencarian bekerja dengan menggunakan <i>Heading</i> laman <i>web</i> kita
+                        sebagai <i>index</i>
+                        pencarian. Dalam HTML terdapat enam tingkatan <i>Heading</i> di mana semakin kecil nilai heading
+                        nya
+                        maka semakin penting dan semakin besar ukurannya pada laman web</p>
+                </section>
+            </div>
+            <div class="hyper-link card">
+                <h3>HYPERLINK</h3>
+                <section class="content text">
+                    <a href="https://tinyurl.com/yxuahtsb" class="tautan-rick">Ini merupakan implementasi hyperlink yang
+                        ada pada HTML</a>
+                    <p>Hyperlink dalam HTML memungkinkan halaman web berpindah laman atau bernavigasi menuju laman
+                        web yang lain. Tag yang digunakan adalah tag ,<code> &lt;a&gt;...&lt;/a&gt;</code>.</p>
+                    <p>Dalam tag Hyperlink pada HTML ada satu atribut yang harus digunakan agar konten yang ada di
+                        antara tag hyperlink berjalan dan dapat melakukan navigasi menuju laman web lain yaitu
+                        atribut
+                        href. Atribut ini bernilai url atau alamat dari laman web tujuan</p>
+
+                </section>
+            </div>
+            <div class="tabel card">
+                <h3>TABLE</h3>
+                <section class="content text">
+                    <div class="single">
+                        <h4>Table tanpa rowspan dan colspan</h4>
+                        <table width=”80%” height=”50%” border="1">
+                            <tr>
+                                <th>Nama Lengkap</th>
+                                <th>Kota Kelahiran</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr>
+                                <td>Budi</td>
+                                <td>Jakarta</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>Andi</td>
+                                <td>Semarang</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td>Rasyid</td>
+                                <td>Surabaya</td>
+                                <td>22</td>
+                            </tr>
+                        </table>
+                        <p>Tabel pada HTML merupakan salah satu elemen penting khususnya digunakan untuk menampilkan
+                            data
+                            yang membutuhkan bentuk tabel. Tabel pada HTML didefinisikan dengan tag
+                            <code>&lt;table&gt;&lt;/table&gt;</code> dengan setiap pendefinisian baris menggunakan tag
+                            <code>&lt;tr&gt;&lt;/tr&gt;</code>, pendefinisian heading tabel menggunakan tag
+                            <code>&lt;th&gt;&lt;/th&gt;</code>, dan pendefinisian kolom menggunakan tag
+                            <code>&lt;td&gt;&lt;/td&gt;</code>.
+                        </p>
+                    </div>
+                    <div class="double">
+                        <h4> Tabel dengan merge table</h3>
+                            <table border="1">
+                                <tr>
+                                    <th rowspan="2"> Nama Lengkap</th>
+                                    <th colspan="2"> Gelar Pendidikan</th>
+                                    <th rowspan="2"> Age</th>
+                                </tr>
+                                <tr>
+                                    <th>Sarjana</th>
+                                    <th>Magister</th>
+                                </tr>
+                                <tr>
+                                    <td>Budi</td>
+                                    <td>S.Kom</td>
+                                    <td>M.Sc</td>
+                                    <td>35</td>
+                                </tr>
+                                <tr>
+                                    <td>Andi</td>
+                                    <td>S.SiKom</td>
+                                    <td>M.T</td>
+                                    <td>52</td>
+                                </tr>
+                            </table>
+                            <p>Dalam tabel HTML, kita dapat melakukan operasi Merge Cell yang biasanya dapat dilakukan
+                                pada
+                                aplikasi perkantoran seperti Microsoft Word atau Excel dengan cara menambahkan atribut
+                                <code>colspan</code> dan <code>rowspan</code> pada tag pembuka kolom yaitu
+                                <code>&lt;td&gt;</code>. Nilai dari atribut tersebut adalah jumlah kolom atau baris yang
+                                akan
+                                digabungkan.
+                            </p>
+                    </div>
+                </section>
+            </div>
+            <div class="img-vid-aud card">
+                <h3>IMAGE, VIDEO dan AUDIO</h3>
+                <section class="content text">
+                    <div class="img">
+                        <h4>IMAGE</h4>
+                        <p>Menampilkan gambar pada halaman web merupakan sebuah improvisasi dalam pembuatan desain
+                            sebuah web yang dapat memperindah tampilan website. Tag HTML yang digunakan adalah
+                            <code>&lt;img /&gt;</code>. Tag ini tidak memiliki pasangan penutup, maka dari itu diakhir
+                            tag pembuka ditambahkan garis miring seperti di atas. Terdapat satu atribut wajib yang harus
+                            ditambahkan seperti atribut <code>href</code> pada tag Hyperlink, yaitu atribut
+                            <code>src</code> yang bernilai alamat direktori gambar disimpan.
+                        </p>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
