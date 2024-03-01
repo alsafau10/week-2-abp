@@ -7,24 +7,81 @@
     <title>Modul 2 Aplikasi Berbasis Platform
     </title>
     <style>
+        @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
 
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: "Quicksand", sans-serif;
+            font-size: medium;
+            margin: 0;
+            padding: 0;
+        }
+
+        .text {
+            text-align: justify;
+        }
+
+        header {
+            display: inline;
+        }
+
+        header .intro {
+            text-align: center;
+            padding: 5px;
+            border-radius: 0%;
+            background-color: rgb(157, 218, 247);
+            text-decoration: none;
+            position: sticky;
+            top: 0%;
+
+        }
+
+
+        .card {
+            box-shadow: 0 2px 8px 2px rgba(80, 71, 71, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        div .heading-example {
+            text-align: center;
+        }
+
+        .heading-exam {
+            border-radius: 20px;
+        }
+
+        .penutup {
+            text-align: center;
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 class="intro">Pengenalan HTML ABP Modul 2</h1>
+        <div class="intro">
+            <h1>Pengenalan HTML ABP Modul 2</h1>
+        </div>
+
     </header>
     <main>
 
         <div class="content-border">
             <div class="heading-exam card">
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-                <h6>Heading 6</h6>
+                <div class="heading-example">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </div>
                 <section class="content text">
                     <p><i>Heading</i> pada HTML merupakan <i>tag</i> yang berguna untuk menampilkan judul dari konten
                         laman <i>web</i>
@@ -136,14 +193,134 @@
                             ditambahkan seperti atribut <code>href</code> pada tag Hyperlink, yaitu atribut
                             <code>src</code> yang bernilai alamat direktori gambar disimpan.
                         </p>
+                        <img src="https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg?auto=compress&cs=tinysrgb&w=500&h=250&dpr=1"
+                            alt="gambar-pemandangan" class="img-config" />
+                    </div>
+                    <div class="video-audio">
+                        <h4>Audio dan Video</h4>
+                        <p>Sebelum berkembangnya teknologi HTML5, untuk menyisipkan audio atau video, diperlukan sebuah
+                            plugin seperti Flash Player. Namun, sekarang dengan HTML5, kita memiliki tag yang dapat
+                            menyisipkan audio atau video ke dalam laman web. Untuk audio, kita menggunakan tag
+                            <code>&lt;audio&gt;</code> untuk tag pembuka dan <code>&lt;source&gt;</code> untuk memanggil
+                            URL atau alamat direktori file. Sedangkan untuk video, kita menggunakan tag
+                            <code>&lt;video&gt;</code>.
+                        </p>
+
+                        <div class="audio">
+                            <audio controls autoplay>
+                                <source src="perfect-beauty.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <div class="video">
+                            <video width="320" height="240" autoplay>
+                                <source src="blue_sky.mov" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="form card">
+                <h3>Form Format</h3>
+                <section class="content text">
+                    <p>Form pada HTML digunakan sebagai wadah untuk menampung dan mengumpulkan data dari pengguna jika
+                        diperlukan untuk disimpan dalam sebuah database. Tag dasar untuk pemanggilan form adalah
+                        <code>&lt;form&gt; ... &lt;/form&gt;</code>, dan di antara tag form tersebut merupakan tempat
+                        mendefinisikan elemen-elemen yang dibutuhkan form yang akan dibuat nantinya.
+                    </p>
+
+                    <p>Atribut utama dari tag form adalah <code>action</code>, yang bernilai tujuan data akan diolah
+                        dengan bahasa pemrograman web saat tombol "Submit" ditekan. Selain itu, atribut
+                        <code>method</code> juga sangat dibutuhkan untuk pengolahan data dengan bahasa pemrograman web.
+                        Nilai dari atribut method bisa berupa <code>POST</code> atau <code>GET</code>, tergantung pada
+                        metode pengiriman data yang diinginkan. Pembahasan lebih lanjut mengenai pengolahan data form
+                        dapat ditemukan pada modul PHP.
+                    </p>
+                    <div class="form">
+                        <form action="" method="">
+                            <table border="0" width="100%">
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>:</td>
+                                    <td><input type="text" name="nama_input" class="text-field" id="nama_id"
+                                            placeholder="Input Nama" value="Praktikan" readonly /></td>
+                                </tr>
+                                <tr>
+                                    <td>Username</td>
+                                    <td>:</td>
+                                    <td><input type="text" name="uname_input" class="text-field" id="uname_id"
+                                            placeholder="Input Username" value="Praktikum" disabled /></td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>:</td>
+                                    <td><input type="password" name="password_input" class="text-field" id="password_id"
+                                            placeholder="Input Password" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>:</td>
+                                    <td><input type="email" name="email_input" class="text-field" id="email_id"
+                                            placeholder="Input Email" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Jenis Kelamin</td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="radio" name="jk_input" class="radioB" id="radioB_pria"
+                                            value="Pria"><label for="radioB_pria">Pria</label>
+                                        <input type="radio" name="jk_input" class="radioB" id="radioB_wanita"
+                                            value="Wanita"><label for="radioB_wanita">Wanita</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Hobi</td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="checkbox" name="hobi_input" class="checkBox" id="checkB_renang"
+                                            value="Renang"><label for="checkB_renang">Renang</label><br />
+                                        <input type="checkbox" name="hobi_input" class="checkBox" id="checkB_bersepeda"
+                                            value="Bersepeda"><label for="checkB_bersepeda">Bersepeda</label><br />
+                                        <input type="checkbox" name="hobi_input" class="checkBox" id="checkB_memancing"
+                                            value="Memancing"><label for="checkB_memancing">Memancing</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jenjang Pendidikan</td>
+                                    <td>:</td>
+                                    <td>
+                                        <select name="jp_input" class="dropdown" id="jp_id">
+                                            <option value="" selected>------Pilih------</option>
+                                            <option value="D3">Tamat D3</option>
+                                            <option value="S1">Tamat S1</option>
+                                            <option value="S2">Tamat S2</option>
+                                            <option value="S3">Tamat S3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kritik & Saran</td>
+                                    <td>:</td>
+                                    <td><textarea rows="5" cols="40"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align="right">
+                                        <button type="button" name="btnCnc" class="btnCancel"
+                                            id="id_btncnc">Cancel</button>
+                                        <input type="Submit" name="btnSub" class="btnSubmit" id="id_btnsub"
+                                            value="Submit" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
 
                     </div>
                 </section>
             </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="penutup">
+        <h5>Fauzan Almas Saepullah 1301210558</h5>
     </footer>
 </body>
 
